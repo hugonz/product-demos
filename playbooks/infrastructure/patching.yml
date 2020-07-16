@@ -5,6 +5,10 @@
   gather_facts: false
 
   tasks:
+  - name: Test fail
+    fail:
+      msg: "Soy el playbook de Hugo"
+   
   - name: upgrade all packages except kernel
     yum:
       name: '*'
