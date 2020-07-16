@@ -6,6 +6,9 @@
 
   tasks:
   - name: upgrade all packages except kernel
+    fail:
+    
+  - name: upgrade all packages except kernel
     yum:
       name: '*'
       state: latest
